@@ -24,6 +24,5 @@
 |  version |  time | file  |
 |---|---|---|
 | numba  | 21.23  | julia_numba.py  |
-| multiproc x8 + numba  |3.9   | julia_parallel_numba.py  |
 | numba + parange  |13.56  | julia_numba_parallel.py  |
 | multiproc + shm + numba  |9.40   | julia_fast.py|
