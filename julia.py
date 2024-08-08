@@ -1,5 +1,5 @@
 import time
-from julia.utils import plot
+from julia.utils import plot, save_image
 import julia.julia_serial as julia_serial
 import julia.julia_np as julia_np
 import julia.julia_numba as julia_numba
@@ -30,8 +30,8 @@ if __name__ == "__main__":
     x_min, x_max, y_min, y_max = -1.8, 1.8, -1.8, 1.8
     c_real, c_imag = -0.62772, -.42193
     c = complex(c_real, c_imag)
-    width = 10000
-    height = 10000
+    width = 1000
+    height = 1000
     iter_max = 300
     z_max = 2
 
@@ -40,4 +40,6 @@ if __name__ == "__main__":
     end = time.time()
 
     print("Execution in {:.3f} sec".format(end - start))
-    plot(iter_list, width, height, iter_max)
+    # plot(iter_list, width, height, iter_max)
+    # save_image("julia_set.png", iter_list, width, height, iter_max)
+
