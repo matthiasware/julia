@@ -4,6 +4,7 @@
 !setup.cfg
 
 !*.py
+!julia_set.png
 
 *.pyc
 *.lprof
