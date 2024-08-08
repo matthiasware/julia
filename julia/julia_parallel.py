@@ -1,7 +1,3 @@
-if 'line_profiler' not in dir() and 'profile' not in dir():
-    def profile(func):
-        return func
-
 import multiprocessing as mp
 
 def calc_z(z, c, z_max, iter_max):

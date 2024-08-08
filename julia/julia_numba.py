@@ -1,11 +1,5 @@
 import numpy as np
 from numba import njit
-from line_profiler import profile
-
-if 'line_profiler' not in dir() and 'profile' not in dir():
-    def profile(func):
-        return func
-
 
 @njit
 def calc_z_numba(zs, iter_map, cs, z_max, iter_max):
