@@ -10,7 +10,7 @@ def plot(iter_list: List[int], width: int, height: int, iter_max: int):
     iter_map = np.array(iter_list)
     iter_map = iter_map / iter_max
     iter_map = iter_map.reshape((width, height))
-    plt.imshow(iter_map)
+    plt.imshow(iter_map, cmap="magma")
     plt.show()
 
 
